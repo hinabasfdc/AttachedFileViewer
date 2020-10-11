@@ -1,0 +1,37 @@
+<template>
+  <lightning-card title="添付ファイルビュアー" icon-name="standard:file">
+    <lightning-button label="更新" slot="actions" onclick={handleClickReload}></lightning-button>
+
+    <div class="slds-var-p-left_medium slds-var-p-right_medium">
+      <template if:true={files}>
+        <lightning-tabset>
+          <template for:each={files} for:item="file">
+            <lightning-tab key={file.Id} label={file.Title} title={file.PathOnClient} icon-name={file.iconname} >
+              <div class="slds-text-align_center">
+
+                <!-- 画像の場合 -->
+                <template if:true={file.isImage}>
+                  <img src={file.srcurl} style="width: 100%" />
+                </template>
+
+                <!-- PDFの場合 -->
+                <template if:true={file.isPdf}>
+                  <iframe src={file.srcurl} style="border: 0px; width: 100%;" height={heightIframe} ></iframe>
+                </template>
+
+                <!-- それ以外 -->
+                <template if:true={file.isOther}>
+                  <img src={file.previewurl} style="width: 100%" />
+                </template>
+
+              </div>
+            </lightning-tab>
+          </template>
+        </lightning-tabset>
+      </template>
+      <template if:false={files}>
+        <p>表示できる画像はありません</p>
+      </template>
+    </div>
+  </lightning-card>
+</template>
