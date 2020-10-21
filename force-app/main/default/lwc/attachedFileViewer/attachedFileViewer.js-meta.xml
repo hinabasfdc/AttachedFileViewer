@@ -14,4 +14,5 @@
             </supportedFormFactors>
             <property name="heightIframe" type="Integer" description="PDF を表示する Iframe の高さをピクセルで設定します" default="720"></property>
         </targetConfig>   
-    </targetConfigs></LightningComponentBundle>
+    </targetConfigs>
+</LightningComponentBundle>
