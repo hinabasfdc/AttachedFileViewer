@@ -48,4 +48,4 @@ sfdx force:org:open
 表示できるのは次の種類です。
 * JPG, PNG
 * PDF
-* WORD / EXCEL / POWERPOINT (最初の1ページのみ)
+* WORD / EXCEL / POWERPOINT (最初の1ページのみ。一度標準のプレビュー表示を行わないと表示されない場合あり)
