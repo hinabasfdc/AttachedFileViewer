@@ -21,6 +21,7 @@ export default class AttachedFileViewer extends LightningElement {
         // Default values
         a[i]['isPdf'] = false;
         a[i]['isImage'] = false;
+        a[i]['isMovie'] = false;
         a[i]['isOther'] = true;
         a[i]['iconname'] = 'doctype:unknown';
         a[i]['srcurl'] = '/sfc/servlet.shepherd/document/download/' + a[i].ContentDocumentId;
@@ -29,11 +30,9 @@ export default class AttachedFileViewer extends LightningElement {
 
         if(a[i].FileType === 'PDF'){
           a[i]['isPdf'] = true;
-          a[i]['isImage'] = false;
           a[i]['isOther'] = false;
           a[i]['iconname'] = 'doctype:pdf';
         }else if(a[i].FileType === 'JPG' || a[i].FileType === 'PNG' || a[i].FileType === 'GIF'){
-          a[i]['isPdf'] = false;
           a[i]['isImage'] = true;
           a[i]['isOther'] = false;
           a[i]['iconname'] = 'doctype:image';
@@ -43,6 +42,10 @@ export default class AttachedFileViewer extends LightningElement {
           a[i]['iconname'] = 'doctype:excel';
         }else if(a[i].FileType === 'POWER_POINT' || a[i].FileType === 'POWER_POINT_X'){
           a[i]['iconname'] = 'doctype:ppt';
+        }else if(a[i].FileType === 'MOV' || a[i].FileType === 'MP4'){
+          a[i]['isMovie'] = true;
+          a[i]['isOther'] = false;
+          a[i]['iconname'] = 'doctype:video';
         }
 
       }

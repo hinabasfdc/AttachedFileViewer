@@ -19,6 +19,11 @@
                   <iframe src={file.srcurl} style="border: 0px; width: 100%;" height={heightIframe} ></iframe>
                 </template>
 
+                <!-- 動画の場合 -->
+                <template if:true={file.isMovie}>
+                  <video src={file.srcurl} controls muted style="width: 100%;"></video>
+                </template>
+                
                 <!-- それ以外 -->
                 <template if:true={file.isOther}>
                   <img src={file.previewurl} style="width: 100%" />

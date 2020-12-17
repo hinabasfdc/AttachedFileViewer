@@ -4,13 +4,13 @@
             "path": "force-app",
             "default": true,
             "package": "AttachedFileViewer",
-            "versionName": "ver 0.1",
-            "versionNumber": "0.1.0.NEXT"
+            "versionName": "ver 0.2",
+            "versionNumber": "0.2.0.NEXT"
         }
     ],
     "namespace": "jpseps",
     "sfdcLoginUrl": "https://login.salesforce.com",
-    "sourceApiVersion": "49.0",
+    "sourceApiVersion": "50.0",
     "packageAliases": {
         "AttachedFileViewer": "0Ho2r000000CaRCCA0",
         "AttachedFileViewer@0.1.0-1": "04t2r000000HFjrAAG"
