@@ -32,7 +32,7 @@ export default class AttachedFileViewer extends LightningElement {
           a[i]['isPdf'] = true;
           a[i]['isOther'] = false;
           a[i]['iconname'] = 'doctype:pdf';
-        }else if(a[i].FileType === 'JPG' || a[i].FileType === 'PNG' || a[i].FileType === 'GIF'){
+        }else if(a[i].FileType === 'JPG' || a[i].FileType === 'JPEG' || a[i].FileType === 'PNG' || a[i].FileType === 'GIF'){
           a[i]['isImage'] = true;
           a[i]['isOther'] = false;
           a[i]['iconname'] = 'doctype:image';
@@ -51,10 +51,8 @@ export default class AttachedFileViewer extends LightningElement {
       }
 
       this.files = a;
-      //window.console.log(this.files);
-
     }else if(error){
-      window.console.log('[DEBUG] wiredFiles error.');
+      console.log('[DEBUG] wiredFiles error.');
     }
   };
 

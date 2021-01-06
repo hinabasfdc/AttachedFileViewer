@@ -52,7 +52,7 @@ sfdx force:org:open
 
 ## 現時点の仕様
 表示できるのは次の種類です。
-* JPG, PNG
+* JPG(JPEG含む), PNG, GIF
 * PDF
 * WORD / EXCEL / POWERPOINT (最初の1ページのみ。一度標準のプレビュー表示を行わないと表示されない場合あり)
 * MOV / MP4

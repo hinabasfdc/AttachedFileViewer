@@ -1,6 +1,6 @@
 public with sharing class AttachedFileViewerApexController {
 
-    private static final List<String> FILETYPES = new List<String>{'JPG','PNG','GIF','PDF','WORD','EXCEL','WORD_X','EXCEL_X','POWER_POINT','POWER_POINT_X','MOV','MP4'};
+    private static final List<String> FILETYPES = new List<String>{'JPG','JPEG','PNG','GIF','PDF','WORD','EXCEL','WORD_X','EXCEL_X','POWER_POINT','POWER_POINT_X','MOV','MP4'};
 
     @AuraEnabled(cacheable=true)
     public static string getFileList(String recordId){

@@ -4,8 +4,8 @@
             "path": "force-app",
             "default": true,
             "package": "AttachedFileViewer",
-            "versionName": "ver 0.2",
-            "versionNumber": "0.2.0.NEXT"
+            "versionName": "ver 0.3",
+            "versionNumber": "0.3.0.NEXT"
         }
     ],
     "namespace": "jpseps",
@@ -14,6 +14,7 @@
     "packageAliases": {
         "AttachedFileViewer": "0Ho2r000000CaRCCA0",
         "AttachedFileViewer@0.1.0-1": "04t2r000000HFjrAAG",
-        "AttachedFileViewer@0.2.0-1": "04t2r000000HNwLAAW"
+        "AttachedFileViewer@0.2.0-1": "04t2r000000HNwLAAW",
+        "AttachedFileViewer@0.3.0-1": "04t2r000000HO17AAG"
     }
 }
